@@ -1,0 +1,1 @@
+# Create Makefile for terraform commands -> that way we can just set up in pipeline to run this file using make command

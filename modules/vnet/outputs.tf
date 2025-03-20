@@ -3,8 +3,8 @@ output "nsg_id" {
   value = azurerm_network_security_group.nsg.id
 }
 
-output "vnet_id" {
-  description = "The value of the virtual network id"
-
-  value = azurerm_virtual_network.vnet.id
+output "nic_id" {
+  description = "The ID of the NIC"
+  value = azurerm_network_interface.nic.id
+  
 }

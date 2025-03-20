@@ -1,13 +1,3 @@
-variable "prefix" {
-  type = string
-}
-
-variable "subscription_id" {
-  description = "The ID of the subscription to be used"
-  type        = string
-
-}
-
 variable "resource_group_name" {
   description = "(Required) The name of the Azure Resource Group"
   type        = string
@@ -24,22 +14,17 @@ variable "ssh_public_key_path" {
 }
 
 variable "vm_size" {
-  type        = string
+  type = string
   description = "The Size of the VM"
 }
 
 variable "admin_username" {
-  type        = string
+  type = string
   description = "The username of the VM"
-
 }
 
-
-
-variable "vnet_address_space" {
-  description = "(Required) The address space that is used the virtual network."
-  type        = list(string)
-}
-variable "subnet_address_prefixes" {
-  type = list(string)
+variable "nic_id" {
+  type = string
+  description = "The ID of the NIC"
+  
 }
